@@ -58,7 +58,7 @@ func reportIP(d string) {
 		fmt.Println(err)
 	}
 
-	url := "https://404.ms/ip.api?ip=" + ip
+	url := "https://ip4.dev/ip.api?ip=" + ip
 	var req *http.Request
 	if req, err = http.NewRequest(http.MethodGet,
 		url, nil); err != nil {
